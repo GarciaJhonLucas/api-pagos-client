@@ -15,7 +15,7 @@ function validate_token(archivoRedirect) {
 }
 
 function update_token_interval() {
-  let fourMinutes = 1000 * 60 * 15 //15 minutos 
+  let fourMinutes = 1000 * 60 * 15
   let interval = setInterval(() => {
     update_token();
   }, fourMinutes);
@@ -41,6 +41,7 @@ let update_token = async () => {
     logout_user();
   }
 };
+
 
 let logout_user = () => {
   localStorage.removeItem("authTokens");
