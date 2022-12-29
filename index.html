@@ -16,6 +16,8 @@
 
 <body>
 
+    <div class="loader" id="loader"></div>
+
     <header class="p-3 mb-3 border-bottom">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -37,11 +39,11 @@
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://avatars.githubusercontent.com/u/39627394?v=4" alt="mdo" width="32" height="32"
                             class="rounded-circle">
-                        Usuario
+                        <span id="username"></span>
                     </a>
                     <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
                         <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        <li><a class="dropdown-item" href="#" id="logout">Sign out</a></li>
                     </ul>
                 </div>
             </div>

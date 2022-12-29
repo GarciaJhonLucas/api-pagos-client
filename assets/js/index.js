@@ -3,7 +3,7 @@ update_token_interval();
 
 
 window.onload = function () {
-    var spinner = document.getElementById('load').style;
+    var spinner = document.getElementById('loader').style;
     var fadeEffect = setInterval(function () {
         spinner.opacity = 0
         spinner.display = "none"
@@ -15,5 +15,5 @@ window.onload = function () {
     document.getElementById("username").innerHTML = user.username.toUpperCase();
 
     const logoutBtn = document.getElementById("logout");
-    logoutBtn.addEventListener("click", logoutUser);
+    logoutBtn.addEventListener("click", logout_user);
 };
