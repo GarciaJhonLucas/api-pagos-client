@@ -57,29 +57,33 @@
                 <div class="card-body">
                     <div class="container">
                         <div class="row">
-                            <div class="mb-3 col-sm-6">
-                                <label for="nombre_servicio_input" class="form-label">Nombre</label>
-                                <select class="form-select" name="nombre_servicio_input" id="nombre_servicio_input" aria-label="Default select example">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                            <div class="mb-3 col-sm-6">
-                                <label for="prefijo_servicio_input" class="form-label">Prefijo</label>
-                                <input type="date" class="form-control" name="prefijo_servicio_input"
-                                    id="prefijo_servicio_input">
-                            </div>
+                            <form id="form">
+                                <div class="mb-3 col-sm-6">
+                                    <label for="option_servicio_input" class="form-label">Nombre</label>
+                                    <select class="form-select" name="option_servicio_input" id="option_servicio_input"
+                                        aria-label="Default select example">
+                                    </select>
+                                </div>
+                                <div class="mb-3 col-sm-6">
+                                    <label for="nombre_servicio_input" class="form-label">Nombre</label>
+                                    <input type="date" class="form-control" name="nombre_servicio_input"
+                                        id="nombre_servicio_input">
+                                </div>
+                                <div class="mb-3 col-sm-6">
+                                    <label for="prefijo_servicio_input" class="form-label">Prefijo</label>
+                                    <input type="date" class="form-control" name="prefijo_servicio_input"
+                                        id="prefijo_servicio_input">
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-sm-12">
+                                        <label for="url_servicio_input" class="form-label">Url imagen</label>
+                                        <input type="url" class="form-control" name="url_servicio_input"
+                                            id="url_servicio_input">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Editar Servicio</button>
+                            </form>
                         </div>
-                        <div class="row">
-                            <div class="mb-3 col-sm-12">
-                                <label for="url_servicio_input" class="form-label">Url imagen</label>
-                                <input type="url" class="form-control" name="url_servicio_input"
-                                    id="url_servicio_input">
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
@@ -89,6 +93,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script type="module" src="../assets/js/messages.js"></script>
+    <script type="module" src="../assets/js/puservices.js"></script>
 </body>
 
 </html>
