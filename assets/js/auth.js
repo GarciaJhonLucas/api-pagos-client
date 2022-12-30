@@ -49,4 +49,12 @@ let logout_user = () => {
   window.location.replace("./login.html");
 };
 
-export { validate_auth, validate_token, update_token_interval, logout_user, BASE_URL };
+
+function admin_validate (archivoRedirect){
+  let user=JSON.parse(localStorage.getItem("user"));
+  if (!user.isAdmin){
+    window.location.href = archivoRedirect;
+  }
+}
+
+export { validate_auth, validate_token, update_token_interval, logout_user, admin_validate, BASE_URL };
